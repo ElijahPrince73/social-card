@@ -1,8 +1,9 @@
 import './header.css'
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Layout, Menu} from 'antd';
 
-const { Header, Footer, Content} = Layout
+const { Header } = Layout
 
 
 const Nav = () => {
@@ -15,7 +16,8 @@ const Nav = () => {
           defaultSelectedKeys={['2']}
           style={{lineHeight:'64px'}}
         >
-          <Menu.Item key='1'>List Users</Menu.Item>
+          <Menu.Item key='2'><Link to='/'>Cards</Link></Menu.Item>
+
         </Menu>
       </div>
     </Header>
